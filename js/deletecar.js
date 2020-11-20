@@ -5,7 +5,7 @@ $(function (){
         var d = dArr[0].value;
         console.log(d);
         $.ajax({
-            url: 'https://webtechcars.herokuapp.com/api/manufacturers/' + d,
+            url: 'https://webtechcars.herokuapp.com/api/cars/' + d,
             type: 'DELETE',
             success: function () {
                 window.alert("Kérés elküldve.")

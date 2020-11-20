@@ -11,7 +11,7 @@ $(document).ready(function () {
             "<th id='allTableth'>Year</th>" +
             "<th id='allTableth'>Horsepower</th>" +
             "</tr>");
-            console.log(data);
+            
         $.each(data, function (key, value) {
             var row = $('<tr></tr>');
             var idCell = $('<td id="allTabletd">' + value._id + '</td>');

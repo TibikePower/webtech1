@@ -13,7 +13,13 @@ $(function (){
             url: 'https://webtechcars.herokuapp.com/api/manufacturers',
             data: JSON.stringify(m),
             dataType: "json",
-            contentType: "application/json"
+            contentType: "application/json",
+            success: function () {
+                window.alert("Kérés elküldve.")
+            },
+            error: function () {
+                window.alert("Gatya :(");
+            }
         })
     })
 });

@@ -21,15 +21,20 @@ $(function (){
             manufacturer: carArr[0].value,
             available: parseInt(carArr[5].value),
             year: parseInt(carArr[4].value),
-            horsepower: parseInt(carArr[6].value),
+            horsepower: parseInt(carArr[6].value)
         };
-        console.log(car);
         $.ajax({
             type:'post',
             url: 'https://webtechcars.herokuapp.com/api/cars',
             data: JSON.stringify(car),
             dataType: "json",
-            contentType: "application/json"
+            contentType: "application/json",
+            success: function () {
+                window.alert("Kérés elküldve.")
+            },
+            error: function () {
+                window.alert("Gatya :(");
+            }
         })
     })
 });
