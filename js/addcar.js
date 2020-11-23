@@ -19,7 +19,7 @@ $(function (){
             consumption: carArr[2].value+"l/100km",
             color: carArr[3].value,
             manufacturer: carArr[0].value,
-            available: parseInt(carArr[5].value),
+            avaiable: parseInt(carArr[5].value),
             year: parseInt(carArr[4].value),
             horsepower: parseInt(carArr[6].value)
         };
